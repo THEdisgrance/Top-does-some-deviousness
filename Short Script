@@ -1,0 +1,2 @@
+---- short script -------
+loadstring(game:HttpGet("https://github.com/THEdisgrance/Top-does-some-deviousness/blob/main/Source"))()
