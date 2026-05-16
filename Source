@@ -1,0 +1,422 @@
+
+---- Made by burnt ------
+
+------ Sicknoobie dont spy on my shit ------
+
+
+------ To hide the gui press l --------
+-------- Gui is located in CoreGui and is named BurntGui ------
+---------- no getgenv() so dont execute twice ----------
+------------ As of 5/16/2026 its undetected and undetectable -------
+---------------- Credits are to Jonmaster2007 and sadly sebby even tho hes a pedophile -------------
+------------------ SEBBY IS VELOCITY NIGGA ---------------------------------------------
+
+
+
+
+
+
+
+local G2L = {};
+
+-- StarterGui.BurntGui
+local cg = cloneref(game:GetService("CoreGui"))
+G2L["1"] = Instance.new("ScreenGui", cg);
+G2L["1"]["Name"] = [[BurntGui]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.BurntGui.Burnts Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Size"] = UDim2.new(0, 722, 0, 406);
+G2L["2"]["Position"] = UDim2.new(0.20817, 0, 0.12043, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[Burnts Frame]];
+
+
+-- StarterGui.BurntGui.Burnts Frame.GuiToggleScript
+G2L["3"] = Instance.new("LocalScript", G2L["2"]);
+G2L["3"]["Name"] = [[GuiToggleScript]];
+
+
+-- StarterGui.BurntGui.Burnts Frame.Normal gun
+G2L["4"] = Instance.new("TextButton", G2L["2"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["TextSize"] = 14;
+G2L["4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(172, 0, 0);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4"]["Size"] = UDim2.new(0, 255, 0, 234);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Text"] = [[For Non Shotguns]];
+G2L["4"]["Name"] = [[Normal gun]];
+G2L["4"]["Position"] = UDim2.new(-0.00026, 0, 0.42365, 0);
+
+
+-- StarterGui.BurntGui.Burnts Frame.Normal gun.LocalScript
+G2L["5"] = Instance.new("LocalScript", G2L["4"]);
+
+
+
+-- StarterGui.BurntGui.Burnts Frame.TrenchShotgun
+G2L["6"] = Instance.new("TextButton", G2L["2"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(173, 0, 0);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["Size"] = UDim2.new(0, 255, 0, 234);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[For Shotguns]];
+G2L["6"]["Name"] = [[TrenchShotgun]];
+G2L["6"]["Position"] = UDim2.new(0.64651, 0, 0.42365, 0);
+
+
+-- StarterGui.BurntGui.Burnts Frame.TrenchShotgun.LocalScript
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
+
+
+
+-- StarterGui.BurntGui.Burnts Frame.Gun name
+G2L["8"] = Instance.new("TextBox", G2L["2"]);
+G2L["8"]["CursorPosition"] = -1;
+G2L["8"]["TextStrokeTransparency"] = 1.08;
+G2L["8"]["Name"] = [[Gun name]];
+G2L["8"]["PlaceholderColor3"] = Color3.fromRGB(173, 255, 255);
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextWrapped"] = true;
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["RichText"] = true;
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["PlaceholderText"] = [[Enter Gun Name]];
+G2L["8"]["Size"] = UDim2.new(0, 722, 0, 107);
+G2L["8"]["Position"] = UDim2.new(-0, 0, 0.1601, 0);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[]];
+
+
+-- StarterGui.BurntGui.Burnts Frame.Person Who made it
+G2L["9"] = Instance.new("TextLabel", G2L["2"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextSize"] = 14;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(176, 61, 0);
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Size"] = UDim2.new(0, 722, 0, 65);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[Made by burner.1 on discord]];
+G2L["9"]["Name"] = [[Person Who made it]];
+G2L["9"]["Position"] = UDim2.new(-0.00026, 0, 0, 0);
+
+
+-- StarterGui.BurntGui.Burnts Frame.Infinite yield
+G2L["a"] = Instance.new("TextButton", G2L["2"]);
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["TextColor3"] = Color3.fromRGB(87, 255, 255);
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(172, 0, 0);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a"]["Size"] = UDim2.new(0, 246, 0, 118);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[Infinite Yield]];
+G2L["a"]["Name"] = [[Infinite yield]];
+G2L["a"]["Position"] = UDim2.new(0.35216, 0, 0.70909, 0);
+
+
+-- StarterGui.BurntGui.Burnts Frame.Infinite yield.LocalScript
+G2L["b"] = Instance.new("LocalScript", G2L["a"]);
+
+
+
+-- StarterGui.BurntGui.Burnts Frame.Aimlock
+G2L["c"] = Instance.new("TextButton", G2L["2"]);
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["TextSize"] = 14;
+G2L["c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(172, 0, 0);
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c"]["Size"] = UDim2.new(0, 246, 0, 62);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Text"] = [[Aimlock]];
+G2L["c"]["Name"] = [[Aimlock]];
+G2L["c"]["Position"] = UDim2.new(0.35168, 0, 0.57143, 0);
+
+
+-- StarterGui.BurntGui.Burnts Frame.Aimlock.LocalScript
+G2L["d"] = Instance.new("LocalScript", G2L["c"]);
+
+
+
+-- StarterGui.BurntGui.Burnts Frame.Infinite Ammo
+G2L["e"] = Instance.new("TextButton", G2L["2"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(171, 0, 0);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e"]["Size"] = UDim2.new(0, 246, 0, 60);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[Infinite clip]];
+G2L["e"]["Name"] = [[Infinite Ammo]];
+G2L["e"]["Position"] = UDim2.new(0.3518, 0, 0.42365, 0);
+
+
+-- StarterGui.BurntGui.Burnts Frame.Infinite Ammo.LocalScript
+G2L["f"] = Instance.new("LocalScript", G2L["e"]);
+
+
+
+-- StarterGui.BurntGui.Burnts Frame.GuiToggleScript
+local function C_3()
+	local script = G2L["3"];
+	local UserInputService = game:GetService("UserInputService")
+	local cg = game:GetService("CoreGui")
+
+	-- Wait for the GUI to exist
+	local gui = cg:WaitForChild("BurntGui",10)
+
+	local isGuiVisible = true
+
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+		-- Ignore if the game is already processing input (like typing in a text box)
+		if gameProcessed then return end
+
+		-- Check if L was pressed
+		if input.KeyCode == Enum.KeyCode.L then
+			isGuiVisible = not isGuiVisible
+
+			-- Toggle visibility
+			gui.Enabled = isGuiVisible
+
+			-- Toggle interactivity on all GUI elements
+			for _, descendant in ipairs(gui:GetDescendants()) do
+				if descendant:IsA("GuiObject") then
+					descendant.Active = isGuiVisible
+				end
+			end
+		end
+	end)
+end;
+task.spawn(C_3);
+-- StarterGui.BurntGui.Burnts Frame.Normal gun.LocalScript
+local function C_5()
+	local script = G2L["5"];
+	local button = script.Parent
+
+	button.Activated:Connect(function()
+		local button = script.Parent
+
+		button.Activated:Connect(function()
+			local Gun = button.Parent["Gun name"].Text
+			local weaponModule = require(game:GetService("Players").LocalPlayer.Backpack[Gun].WeaponSettings)
+			weaponModule.WeaponType = "PlayerAssaultRifle"
+			weaponModule.BulletCount = 1
+			weaponModule.Spread = 0
+			weaponModule.ReloadSpeed = 0
+			weaponModule.ReloadSpeedEndDelay = 0
+			weaponModule.Speed = 12000000000000000
+			weaponModule.Recoil = 0
+			weaponModule.ScopeRecoil = 0
+			weaponModule.Damage = 500
+			weaponModule.Firerate = 0
+			weaponModule.ChargeSpeed = 100
+			weaponModule.SpeedBuff = 60
+			weaponModule.ScopeSpeed = 0
+			weaponModule.ScopeSpread = 0
+			weaponModule.HeadshotModifer = 1000
+			weaponModule.FragmentCount = 100
+			weaponModule.CanDuelWield = true
+			weaponModule.Range = math.huge
+			weaponModule.ChargeSpeed = 1000
+			weaponModule.ThrownGrenades = 120
+			weaponModule.PumpAction = false
+			weaponModule.DamageRanges = {"MaxRange", 500, 500}
+			weaponModule.MaxArmorPierce = 100
+			weaponModule.CurrentArmorPierce = 100
+			weaponModule.ProjectileType = "DoomsdayMissle"
+			weaponModule.Automatic = true
+			weaponModule.Auto = true
+		end)
+	end)
+end;
+task.spawn(C_5);
+-- StarterGui.BurntGui.Burnts Frame.TrenchShotgun.LocalScript
+local function C_7()
+	local script = G2L["7"];
+	local button = script.Parent
+
+	button.Activated:Connect(function()
+		local Gun = button.Parent["Gun name"].Text
+		local weaponModule = require(game:GetService("Players").LocalPlayer.Backpack[Gun].WeaponSettings)
+		weaponModule.WeaponType = "PlayerAssaultRifle"
+		weaponModule.BulletCount = 500
+		weaponModule.Spread = 0
+		weaponModule.ReloadSpeed = 0
+		weaponModule.ReloadSpeedEndDelay = 0
+		weaponModule.Speed = 12000000000000000
+		weaponModule.Recoil = 0
+		weaponModule.ScopeRecoil = 0
+		weaponModule.Damage = 500
+		weaponModule.Firerate = 0
+		weaponModule.ChargeSpeed = 100
+		weaponModule.SpeedBuff = 60
+		weaponModule.ScopeSpeed = 0
+		weaponModule.ScopeSpread = 0
+		weaponModule.HeadshotModifer = 1000
+		weaponModule.FragmentCount = 100
+		weaponModule.CanDuelWield = true
+		weaponModule.Range = math.huge
+		weaponModule.ChargeSpeed = 1000
+		weaponModule.ThrownGrenades = 120
+		weaponModule.PumpAction = false
+		weaponModule.DamageRanges = {"MaxRange", 500, 500}
+		weaponModule.MaxArmorPierce = 100
+		weaponModule.CurrentArmorPierce = 100
+		weaponModule.ProjectileType = "DoomsdayMissle"
+		weaponModule.Automatic = true
+		weaponModule.Auto = true
+	end)
+end;
+task.spawn(C_7);
+-- StarterGui.BurntGui.Burnts Frame.Infinite yield.LocalScript
+local function C_b()
+	local script = G2L["b"];
+	local button = script.Parent
+
+	button.Activated:Connect(function()
+	--[[
+		WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+	]]
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+	end)
+end;
+task.spawn(C_b);
+-- StarterGui.BurntGui.Burnts Frame.Aimlock.LocalScript
+local function C_d()
+	local script = G2L["d"];
+	local button = script.Parent
+
+	button.Activated:Connect(function()
+		--FE Simple AimLock Script | Released Nov 2021 | Working.
+		local Area = game:GetService("Workspace")
+		local RunService = game:GetService("RunService")
+		local UIS = game:GetService("UserInputService")
+		local Players = game:GetService("Players")
+		local LocalPlayer = Players.LocalPlayer
+		local MyCharacter = LocalPlayer.Character
+		local MyRoot = MyCharacter:FindFirstChild("HumanoidRootPart")
+		local MyHumanoid = MyCharacter:FindFirstChild("Humanoid")
+		local Mouse = LocalPlayer:GetMouse()
+		local MyView = Area.CurrentCamera
+		local MyTeamColor = LocalPlayer.TeamColor
+		local HoldingM2 = false
+		local Active = false
+		local Lock = false
+		local Epitaph = 0 ---Note: The Bigger The Number, The More Prediction.
+		local HeadOffset = Vector3.new(0, .1, 0)
+
+		_G.TeamCheck = false
+		_G.AimPart = "HumanoidRootPart"
+		_G.Sensitivity = 0
+		_G.CircleSides = 64
+		_G.CircleColor = Color3.fromRGB(255, 0, 130)
+		_G.CircleTransparency = 0
+		_G.CircleRadius = 200
+		_G.CircleFilled = false
+		_G.CircleVisible = true
+		_G.CircleThickness = 1
+
+		local FOVCircle = Drawing.new("Circle")
+		FOVCircle.Position = Vector2.new(MyView.ViewportSize.X / 2, MyView.ViewportSize.Y / 2)
+		FOVCircle.Radius = _G.CircleRadius
+		FOVCircle.Filled = _G.CircleFilled
+		FOVCircle.Color = _G.CircleColor
+		FOVCircle.Visible = _G.CircleVisible
+		FOVCircle.Transparency = _G.CircleTransparency
+		FOVCircle.NumSides = _G.CircleSides
+		FOVCircle.Thickness = _G.CircleThickness
+
+		local function CursorLock()
+			UIS.MouseBehavior = Enum.MouseBehavior.LockCenter
+		end
+		local function UnLockCursor()
+			HoldingM2 = false Active = false Lock = false 
+			UIS.MouseBehavior = Enum.MouseBehavior.Default
+		end
+		function FindNearestPlayer()
+			local dist = math.huge
+			local Target = nil
+			for _, v in pairs(Players:GetPlayers()) do
+				if v ~= LocalPlayer and v.Character:FindFirstChild("Humanoid") and v.Character:FindFirstChild("Humanoid").Health > 0 and v.Character:FindFirstChild("HumanoidRootPart") and v then
+					local TheirCharacter = v.Character
+					local CharacterRoot, Visible = MyView:WorldToViewportPoint(TheirCharacter[_G.AimPart].Position)
+					if Visible then
+						local RealMag = (Vector2.new(Mouse.X, Mouse.Y) - Vector2.new(CharacterRoot.X, CharacterRoot.Y)).Magnitude
+						if RealMag < dist and RealMag < FOVCircle.Radius then
+							dist = RealMag
+							Target = TheirCharacter
+						end
+					end
+				end
+			end
+			return Target
+		end
+
+		UIS.InputBegan:Connect(function(Input)
+			if Input.UserInputType == Enum.UserInputType.MouseButton2 then
+				HoldingM2 = true
+				Active = true
+				Lock = true
+				if Active then
+					local The_Enemy = FindNearestPlayer()
+					while HoldingM2 do task.wait(.000001)
+						if Lock and The_Enemy ~= nil then
+							local Future = The_Enemy.HumanoidRootPart.CFrame + (The_Enemy.HumanoidRootPart.Velocity * Epitaph + HeadOffset)
+							MyView.CFrame = CFrame.lookAt(MyView.CFrame.Position, Future.Position)
+							CursorLock()
+						end
+					end
+				end
+			end
+		end)
+		UIS.InputEnded:Connect(function(Input)
+			if Input.UserInputType == Enum.UserInputType.MouseButton2 then
+				UnLockCursor()
+			end
+		end)
+	end)
+end;
+task.spawn(C_d);
+-- StarterGui.BurntGui.Burnts Frame.Infinite Ammo.LocalScript
+local function C_f()
+	local script = G2L["f"];
+	local button = script.Parent
+
+	button.Activated:Connect(function()
+		local gunName = button.Parent["Gun name"].Text
+		local player = game.Players.LocalPlayer
+
+		while task.wait() do
+			local gun = player.Character:FindFirstChild(gunName) or player.Backpack:FindFirstChild(gunName)
+			if gun then
+				local weaponTypes = {"PlayerHandgun","PlayerAssaultRifle","PlayerShotgun","PlayerSniper","PlayerBurstAssaultRifle","PlayerRifle"}
+				for _, weaponType in weaponTypes do
+					local controls = gun:FindFirstChild(weaponType)
+					if controls then
+						local ammo = controls:FindFirstChild("PlayerControls")
+						if ammo then
+							local clientAmmo = ammo:FindFirstChild("ClientAmmo")
+							if clientAmmo then
+								clientAmmo.Value = 12
+							end
+						end
+					end
+				end
+			end
+		end
+	end)
+end
