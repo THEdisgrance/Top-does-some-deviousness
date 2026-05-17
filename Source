@@ -1,22 +1,4 @@
 
----- Made by burnt ------
-
------- Sicknoobie dont spy on my shit ------
-
-
------- To hide the gui press l --------
--------- Gui is located in CoreGui and is named BurntGui ------
----------- no getgenv() so dont execute twice ----------
------------- As of 5/16/2026 its undetected and undetectable -------
----------------- Credits are to Jonmaster2007 and sadly sebby even tho hes a pedophile -------------
------------------- SEBBY IS VELOCITY NIGGA ---------------------------------------------
-
-
-
-
-
-
-
 local G2L = {};
 
 -- StarterGui.BurntGui
@@ -81,7 +63,6 @@ G2L["7"] = Instance.new("LocalScript", G2L["6"]);
 
 -- StarterGui.BurntGui.Burnts Frame.Gun name
 G2L["8"] = Instance.new("TextBox", G2L["2"]);
-G2L["8"]["CursorPosition"] = -1;
 G2L["8"]["TextStrokeTransparency"] = 1.08;
 G2L["8"]["Name"] = [[Gun name]];
 G2L["8"]["PlaceholderColor3"] = Color3.fromRGB(173, 255, 255);
@@ -172,26 +153,26 @@ G2L["f"] = Instance.new("LocalScript", G2L["e"]);
 
 -- StarterGui.BurntGui.Burnts Frame.GuiToggleScript
 local function C_3()
-	local script = G2L["3"];
+local script = G2L["3"];
 	local UserInputService = game:GetService("UserInputService")
 	local cg = game:GetService("CoreGui")
-
+	
 	-- Wait for the GUI to exist
 	local gui = cg:WaitForChild("BurntGui",10)
-
+	
 	local isGuiVisible = true
-
+	
 	UserInputService.InputBegan:Connect(function(input, gameProcessed)
 		-- Ignore if the game is already processing input (like typing in a text box)
 		if gameProcessed then return end
-
+	
 		-- Check if L was pressed
 		if input.KeyCode == Enum.KeyCode.L then
 			isGuiVisible = not isGuiVisible
-
+	
 			-- Toggle visibility
 			gui.Enabled = isGuiVisible
-
+	
 			-- Toggle interactivity on all GUI elements
 			for _, descendant in ipairs(gui:GetDescendants()) do
 				if descendant:IsA("GuiObject") then
@@ -199,17 +180,17 @@ local function C_3()
 				end
 			end
 		end
-	end)
+		end)
 end;
 task.spawn(C_3);
 -- StarterGui.BurntGui.Burnts Frame.Normal gun.LocalScript
 local function C_5()
-	local script = G2L["5"];
+local script = G2L["5"];
 	local button = script.Parent
-
+	
 	button.Activated:Connect(function()
 		local button = script.Parent
-
+	
 		button.Activated:Connect(function()
 			local Gun = button.Parent["Gun name"].Text
 			local weaponModule = require(game:GetService("Players").LocalPlayer.Backpack[Gun].WeaponSettings)
@@ -246,9 +227,9 @@ end;
 task.spawn(C_5);
 -- StarterGui.BurntGui.Burnts Frame.TrenchShotgun.LocalScript
 local function C_7()
-	local script = G2L["7"];
+local script = G2L["7"];
 	local button = script.Parent
-
+	
 	button.Activated:Connect(function()
 		local Gun = button.Parent["Gun name"].Text
 		local weaponModule = require(game:GetService("Players").LocalPlayer.Backpack[Gun].WeaponSettings)
@@ -284,9 +265,9 @@ end;
 task.spawn(C_7);
 -- StarterGui.BurntGui.Burnts Frame.Infinite yield.LocalScript
 local function C_b()
-	local script = G2L["b"];
+local script = G2L["b"];
 	local button = script.Parent
-
+	
 	button.Activated:Connect(function()
 	--[[
 		WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
@@ -297,9 +278,9 @@ end;
 task.spawn(C_b);
 -- StarterGui.BurntGui.Burnts Frame.Aimlock.LocalScript
 local function C_d()
-	local script = G2L["d"];
+local script = G2L["d"];
 	local button = script.Parent
-
+	
 	button.Activated:Connect(function()
 		--FE Simple AimLock Script | Released Nov 2021 | Working.
 		local Area = game:GetService("Workspace")
@@ -318,7 +299,7 @@ local function C_d()
 		local Lock = false
 		local Epitaph = 0 ---Note: The Bigger The Number, The More Prediction.
 		local HeadOffset = Vector3.new(0, .1, 0)
-
+	
 		_G.TeamCheck = false
 		_G.AimPart = "HumanoidRootPart"
 		_G.Sensitivity = 0
@@ -329,7 +310,7 @@ local function C_d()
 		_G.CircleFilled = false
 		_G.CircleVisible = true
 		_G.CircleThickness = 1
-
+	
 		local FOVCircle = Drawing.new("Circle")
 		FOVCircle.Position = Vector2.new(MyView.ViewportSize.X / 2, MyView.ViewportSize.Y / 2)
 		FOVCircle.Radius = _G.CircleRadius
@@ -339,7 +320,7 @@ local function C_d()
 		FOVCircle.Transparency = _G.CircleTransparency
 		FOVCircle.NumSides = _G.CircleSides
 		FOVCircle.Thickness = _G.CircleThickness
-
+	
 		local function CursorLock()
 			UIS.MouseBehavior = Enum.MouseBehavior.LockCenter
 		end
@@ -365,7 +346,7 @@ local function C_d()
 			end
 			return Target
 		end
-
+	
 		UIS.InputBegan:Connect(function(Input)
 			if Input.UserInputType == Enum.UserInputType.MouseButton2 then
 				HoldingM2 = true
@@ -393,18 +374,26 @@ end;
 task.spawn(C_d);
 -- StarterGui.BurntGui.Burnts Frame.Infinite Ammo.LocalScript
 local function C_f()
-	local script = G2L["f"];
+local script = G2L["f"];
 	local button = script.Parent
-
+	
 	button.Activated:Connect(function()
 		local gunName = button.Parent["Gun name"].Text
 		local player = game.Players.LocalPlayer
-
+	
 		while task.wait() do
 			local gun = player.Character:FindFirstChild(gunName) or player.Backpack:FindFirstChild(gunName)
 			if gun then
-				local weaponTypes = {"PlayerHandgun","PlayerAssaultRifle","PlayerShotgun","PlayerSniper","PlayerBurstAssaultRifle","PlayerRifle"}
-				for _, weaponType in weaponTypes do
+				local weaponTypes = {
+					"PlayerHandgun",
+					"PlayerAssaultRifle",
+					"PlayerShotgun",
+					"PlayerSniper",
+					"PlayerBurstAssaultRifle",
+					"PlayerRifle"
+				}
+	
+				for _, weaponType in ipairs(weaponTypes) do
 					local controls = gun:FindFirstChild(weaponType)
 					if controls then
 						local ammo = controls:FindFirstChild("PlayerControls")
@@ -419,4 +408,8 @@ local function C_f()
 			end
 		end
 	end)
-end
+	
+end;
+task.spawn(C_f);
+
+return G2L["1"], require;
